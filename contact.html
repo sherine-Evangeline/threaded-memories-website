@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Threaded Memories. Request a custom embroidery quote, ask questions, or say hello!">
+  <title>Contact Us | Threaded Memories</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo" id="nav-logo">
+          <span class="logo-icon">🧵</span>
+          <span class="logo-text">Threaded Memories</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero-contact" id="contact-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <p class="page-hero-label">Say Hello</p>
+        <h1 class="page-hero-title">Contact Us</h1>
+        <p class="page-hero-subtitle">
+          We'd love to hear from you. Let's start a conversation about your next embroidery project.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h2 class="contact-form-title">Send Us a Message</h2>
+            <p class="contact-form-subtitle">
+              Fill in the details below and we'll get back to you within 24 hours.
+            </p>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group" id="form-group-name">
+                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Priya Sharma" required>
+                <span class="form-error" id="name-error"></span>
+              </div>
+              <div class="form-group" id="form-group-email">
+                <label for="contact-email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. priya@example.com" required>
+                <span class="form-error" id="email-error"></span>
+              </div>
+              <div class="form-group" id="form-group-phone">
+                <label for="contact-phone" class="form-label">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="e.g. +91 98765 43210">
+              </div>
+              <div class="form-group" id="form-group-service">
+                <label for="contact-service" class="form-label">Service Interested In</label>
+                <select id="contact-service" name="service" class="form-input form-select">
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="monograms">Custom Monograms</option>
+                  <option value="floral">Floral & Botanical</option>
+                  <option value="portraits">Custom Portraits</option>
+                  <option value="wedding">Wedding Embroidery</option>
+                  <option value="corporate">Corporate Gifts</option>
+                  <option value="decor">Home Décor</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group" id="form-group-message">
+                <label for="contact-message" class="form-label">Your Message</label>
+                <textarea id="contact-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tell us about your project idea..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+                Send Message
+              </button>
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+
+          <!-- Contact Info Sidebar -->
+          <div class="contact-info-wrapper">
+            <div class="contact-info-card" id="contact-info">
+              <h3 class="contact-info-title">Contact Information</h3>
+              <p class="contact-info-subtitle">
+                Feel free to reach out through any of these channels.
+              </p>
+              <div class="contact-info-items">
+                <div class="contact-info-item" id="info-email">
+                  <div class="info-icon">✉</div>
+                  <div>
+                    <p class="info-label">Email</p>
+                    <p class="info-value">hello@threadedmemories.com</p>
+                  </div>
+                </div>
+                <div class="contact-info-item" id="info-phone">
+                  <div class="info-icon">☎</div>
+                  <div>
+                    <p class="info-label">Phone</p>
+                    <p class="info-value">+91 98765 43210</p>
+                  </div>
+                </div>
+                <div class="contact-info-item" id="info-address">
+                  <div class="info-icon">📍</div>
+                  <div>
+                    <p class="info-label">Studio Address</p>
+                    <p class="info-value">42, Silk Street, T. Nagar<br>Chennai, Tamil Nadu 600017</p>
+                  </div>
+                </div>
+                <div class="contact-info-item" id="info-hours">
+                  <div class="info-icon">🕐</div>
+                  <div>
+                    <p class="info-label">Working Hours</p>
+                    <p class="info-value">Mon – Sat: 10 AM – 7 PM<br>Sunday: Closed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="contact-map" id="contact-map">
+              <div class="map-placeholder">
+                <span class="map-icon">🗺</span>
+                <p>42, Silk Street, T. Nagar, Chennai</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Common Questions</p>
+          <h2 class="section-title">Frequently Asked</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-card" id="faq-1">
+            <h3 class="faq-question">How long does a custom order take?</h3>
+            <p class="faq-answer">
+              Depending on the complexity, most orders are completed within 5–14 business days. 
+              Rush orders can be accomodated for an additional fee.
+            </p>
+          </div>
+          <div class="faq-card" id="faq-2">
+            <h3 class="faq-question">Do you ship across India?</h3>
+            <p class="faq-answer">
+              Yes! We ship nationwide with secure packaging. International shipping is also 
+              available upon request.
+            </p>
+          </div>
+          <div class="faq-card" id="faq-3">
+            <h3 class="faq-question">Can I provide my own fabric?</h3>
+            <p class="faq-answer">
+              Absolutely. You can send us your own fabric, or we can source premium materials 
+              for you from our curated collection.
+            </p>
+          </div>
+          <div class="faq-card" id="faq-4">
+            <h3 class="faq-question">What if I'm not sure about the design?</h3>
+            <p class="faq-answer">
+              No worries! We offer a free consultation to help you brainstorm and finalize 
+              the perfect design before any work begins.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <span class="logo-icon">🧵</span>
+            <span class="logo-text">Threaded Memories</span>
+          </a>
+          <p class="footer-tagline">Handcrafted embroidery that tells your story.</p>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <ul>
+            <li>✉ hello@threadedmemories.com</li>
+            <li>☎ +91 98765 43210</li>
+            <li>📍 Chennai, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Threaded Memories. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
